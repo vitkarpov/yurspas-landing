@@ -1,0 +1,38 @@
+.logo
+{
+    display: inline-block;
+}
+
+.logo__main
+{
+    display: inline-block;
+
+    font-family: "Roboto Slab";
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.logo__add
+{
+    position: relative;
+    display: inline-block;
+    margin-left: 50px;
+
+    vertical-align: middle;
+    top: -2px;
+}
+
+.logo__add:before
+{
+    content: '';
+
+    position: absolute;
+    left: -25px;
+    top: 50%;
+
+    width: 1px;
+    height: 30px;
+    margin-top: -15px;
+
+    background: gray;
+}

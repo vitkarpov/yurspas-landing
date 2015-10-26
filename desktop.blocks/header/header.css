@@ -1,0 +1,63 @@
+.header
+{
+    position: relative;
+    height: 76px;
+}
+
+.header__inner
+{
+    position: fixed;
+    z-index: 99;
+
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 36px;
+    padding: 20px 0;
+
+    line-height: 36px;
+
+    background: black;
+    text-align: center;
+}
+
+@media (max-width: 1000px) {
+    .header__inner {
+        position: absolute;
+    }
+}
+
+.header__inner:after
+{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.header__logo
+{
+    float: left;
+    color: white;
+}
+
+.header__contacts
+{
+    float: right;
+    color: white;
+}
+
+.header__phone
+{
+    display: inline-block;
+
+    font-weight: bold;
+    font-size: 1.35em;
+}
+
+.header__hours
+{
+    display: inline-block;
+    margin-left: 20px;
+
+    vertical-align: top;
+}

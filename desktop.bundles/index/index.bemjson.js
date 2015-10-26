@@ -1,0 +1,414 @@
+module.exports = {
+    block : 'page',
+    title : 'Yurspas',
+    favicon : '/favicon.ico',
+    head : [
+        { elem : 'meta', attrs : { name : 'description', content : '' } },
+        { elem : 'meta', attrs : { name : 'viewport', content : 'width=device-width, initial-scale=1' } },
+        { elem : 'css', url : 'index.min.css' },
+        { elem : 'googlefont', font: 'Roboto+Slab:400,700:cyrillic' }
+    ],
+    scripts: [
+        { elem : 'js', url : 'index.min.js' }
+    ],
+    mods : { theme : 'islands' },
+    content : [
+        {
+            block : 'header',
+            content : [
+                {
+                    block: 'page',
+                    elem: 'wrapper',
+                    content: [
+                        {
+                            block: 'logo',
+                            mix: [{ block: 'header', elem: 'logo' }],
+                            content: [
+                                {
+                                    elem: 'main',
+                                    content: 'ЮрСпас.ру'
+                                },
+                                {
+                                    elem: 'add',
+                                    content: 'Юридические услуги'
+                                }
+                            ]
+                        },
+                        {
+                            block: 'button',
+                            mods: { theme: 'islands', size: 'xl', view: 'action' },
+                            text: 'Заказать звонок'
+                        },
+                        {
+                            block: 'header',
+                            elem: 'contacts',
+                            content: [
+                                {
+                                    elem: 'phone',
+                                    content: '8 909 409-80-26'
+                                },
+                                {
+                                    elem: 'hours',
+                                    content: 'С 9 до 18 часов'
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            block: 'hero',
+            content: [
+                {
+                    block: 'page',
+                    elem: 'wrapper',
+                    content: [
+                        {
+                            block: 'hero',
+                            elem: 'content',
+                            content: [
+                                {
+                                    block: 'caption',
+                                    mix: [{ block: 'hero', elem: 'caption' }],
+                                    content: 'Ростовская городская юридическая контора&nbsp;№1'
+                                },
+                                {
+                                    elem: 'subcaption',
+                                    content: 'Получи бесплатную консультацию юриста прямо сейчас!'
+                                },
+                                {
+                                    block: 'button',
+                                    mods: { theme: 'islands', size: 'l', view: 'action' },
+                                    text: 'Задать вопрос'
+                                },
+                                {
+                                    block: 'advantages',
+                                    content: [
+                                        {
+                                            elem: 'item',
+                                            content: [
+                                                {
+                                                    elem: 'caption',
+                                                    content: [
+                                                        {
+                                                            tag: 'b',
+                                                            bem: false,
+                                                            content: '90'
+                                                        },
+                                                        '%'
+                                                    ]
+                                                },
+                                                'Более&nbsp;90% всех дел выигрывается'
+                                            ]
+                                        },
+                                        {
+                                            elem: 'item',
+                                            content: [
+                                                {
+                                                    elem: 'caption',
+                                                    content: [
+                                                        {
+                                                            tag: 'b',
+                                                            bem: false,
+                                                            content: '500'
+                                                        },
+                                                        '&nbsp;дел'
+                                                    ]
+                                                },
+                                                'Адвокат Карпов провел более 300 уголовных и&nbsp;200 граждаских дел'
+                                            ],
+                                        },
+                                        {
+                                            elem: 'item',
+                                            content: [
+                                                {
+                                                    elem: 'caption',
+                                                    content: [
+                                                        {
+                                                            tag: 'b',
+                                                            bem: false,
+                                                            content: '37'
+                                                        },
+                                                        '&nbsp;лет'
+                                                    ]
+                                                },
+                                                '37&nbsp;лет опыта работы в&nbsp;юридической сфере'
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            block: 'page',
+            elem: 'wrapper',
+            content: {
+                block: 'achievments',
+                content: [
+                    {
+                        block: 'caption',
+                        mix: [{ block: 'achievments', elem: 'caption' }],
+                        content: 'Достижения адвоката'
+                    },
+                    {
+                        elem: 'subcaption',
+                        content: 'Значимые награды и статусы Карпова Сергея Викторовича',
+                    },
+                    {
+                        elem: 'content',
+                        content: [
+                            {
+                                elem: 'item',
+                                content: [
+                                    {
+                                        elem: 'pic',
+                                        mods: { type: 'medal' },
+                                        content: [
+                                            {
+                                                elem: 'item-caption',
+                                                content: 'Медаль прокуратуры'
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        elem: 'text',
+                                        content: 'В&nbsp;2011 году награжден медалью прокуратуры Российской Федерации &laquo;290 лет прокуратуре Росии&raquo;'
+                                    }
+                                ]
+                            },
+                            {
+                                elem: 'item',
+                                content: [
+                                    {
+                                        elem: 'pic',
+                                        mods: { type: 'diploma' },
+                                        content: [
+                                            {
+                                                elem: 'item-caption',
+                                                content: 'Грамота Президента'
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        elem: 'text',
+                                        content: 'В&nbsp;2011 году награжден почетной грамотой Президента Федеральной палаты адвокатов&nbsp;РФ'
+                                    }
+                                ]
+                            },
+                            {
+                                elem: 'item',
+                                content: [
+                                    {
+                                        elem: 'pic',
+                                        mods: { type: 'international' },
+                                        content: [
+                                            {
+                                                elem: 'item-caption',
+                                                content: 'Международный статус юриста'
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        elem: 'text',
+                                        content: 'С&nbsp;2013 года является членом международной ассоциации юристов (IBA), секция &laquo;криминальное право&raquo;'
+                                    }
+                                ]
+                            },
+                            {
+                                elem: 'item',
+                                content: [
+                                    {
+                                        elem: 'pic',
+                                        mods: { type: 'expert' },
+                                        content: [
+                                            {
+                                                elem: 'item-caption',
+                                                content: 'Статус эксперта'
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        elem: 'text',
+                                        content: 'Эксперт некоммерческой организации &laquo;Центр общественных процедур &laquo;Бизнес против Коррупции&raquo;'
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            block: 'about',
+            content: {
+                elem: 'wrapper',
+                content: {
+                    block: 'page',
+                    elem: 'wrapper',
+                    content: {
+                        block: 'about',
+                        elem: 'content',
+                        content: [
+                            {
+                                block: 'caption',
+                                mix: [{ block: 'about', elem: 'caption' }],
+                                content: 'Карпов Сергей&nbsp;Викторович'
+                            },
+                            {
+                                elem: 'quote',
+                                content: [
+                                    'Честность в&nbsp;работе на&nbsp;клиента&nbsp;&mdash; это главное.',
+                                    {
+                                        tag: 'br',
+                                        bem: false
+                                    },
+                                    'Все вопросы по&nbsp;ведению дела согласовываются с&nbsp;клиентом'
+                                ]
+                            },
+                            {
+                                elem: 'item',
+                                mods: { pic: 'military' },
+                                content: 'Проходил службу в&nbsp;органах военной прокуратуры с&nbsp;1978 по&nbsp;2001&nbsp;г.'
+                            },
+                            {
+                                elem: 'item',
+                                mods: { pic: 'lawer' },
+                                content: 'Адвокат Ростовской областной коллегии адвокатов с&nbsp;2001&nbsp;года, а&nbsp;с&nbsp;2008&nbsp;&mdash; заведующий филиалом &laquo;Ростовской городской юридической конторы &#8470;&nbsp;1&raquo;'
+                            },
+                            {
+                                block: 'button',
+                                mods: { theme: 'islands', size: 'l', view: 'action' },
+                                text: 'Заказать звонок'
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            block: 'page',
+            elem: 'wrapper',
+            content: {
+                block: 'services',
+                js: true,
+                content: [
+                    {
+                        block: 'caption',
+                        mix: [{ block: 'services', elem: 'caption' }],
+                        content: 'Услуги адвоката'
+                    },
+                    {
+                        block : 'radio-group',
+                        mods : { theme : 'islands', size : 'l', type : 'button' },
+                        val: 'civil',
+                        options : [
+                            { val : 'civil', text : 'Гражданские' },
+                            { val : 'criminal', text : 'Уголовные' },
+                            { val : 'military', text : 'Военные' }
+                        ]
+                    },
+                    {
+                        elem: 'text',
+                        content: 'Представительство клиента в судах первой, кассационной и надзорной инстанций, а также в арбитражный и третейских судах по гражданским делам.'
+                    },
+                    {
+                        elem: 'item',
+                        attrs: { 'data-id': 'civil' },
+                        content: {
+                            block: 'list',
+                            items: [
+                                'Возврат долга',
+                                'Возмещение ущерба',
+                                'Неправомерные действия государственных органов',
+                                'Жилищное законодательство'
+                            ]
+                        }
+                    },
+                    {
+                        elem: 'item',
+                        attrs: { 'data-id': 'criminal' },
+                        content: {
+                            block: 'list',
+                            items: [
+                                'Возврат долга',
+                                'Возмещение ущерба'
+                            ]
+                        }
+                    },
+                    {
+                        elem: 'item',
+                        attrs: { 'data-id': 'military' },
+                        content: {
+                            block: 'list',
+                            items: [
+                                'Возврат долга',
+                                'Возмещение ущерба',
+                                'Неправомерные действия государственных органов',
+                                'Жилищное законодательство',
+                                'Возврат долга',
+                                'Возмещение ущерба',
+                                'Неправомерные действия государственных органов'
+                            ]
+                        }
+                    },
+                    {
+                        block: 'button',
+                        mods: { theme: 'islands', size: 'l', view: 'action' },
+                        text: 'Задать вопрос'
+                    }
+                ]
+            }
+        },
+        {
+            block: 'page',
+            elem: 'wrapper',
+            content: {
+                block: 'reasons',
+                caption: 'Еще 6 причин, почему стоит воспользоваться юридическими услугами адвоката Карпова',
+                items: [
+                    {
+                        caption: '90% побед в суде',
+                        pic: 'percent',
+                        text: 'Высокий процент выигрыша судебных дел. Адвокат Карпов выигрывает более 90% всех граждаских и уголовных дел'
+                    },
+                    {
+                        caption: '37 лет опыта работы',
+                        pic: 'exp',
+                        text: 'Большой опыт работы в прокуратуре помогает адвокату выработать индивидуальный подход к каждому делу'
+                    },
+                    {
+                        caption: 'Клиенты по всей России',
+                        pic: 'map',
+                        text: 'География работ адвоката Карпова включает в себя территорию всей Российской Федерации'
+                    },
+                    {
+                        caption: 'Провел более 500 дел',
+                        pic: 'cases',
+                        text: 'За время работы адвокатом Сергей Викторович провел более 300 уголовных и 200 граждаских дел'
+                    },
+                    {
+                        caption: 'Бесплатная онлайн-консультация',
+                        pic: 'consult',
+                        text: 'Бесплатная и оперативная онлайн-консультация: за 3 года Сергей Викторович ответил на более 3000 вопросов онлайн'
+                    },
+                    {
+                        caption: '100% конфеденциальность',
+                        pic: 'anonim',
+                        text: 'Адвокат Карпов гарантирует конфеденциальность всей информации, полученной от клиента'
+                    }
+                ]
+            }
+        },
+        {
+            block : 'footer',
+            content : [
+                'footer content goes here'
+            ]
+        }
+    ]
+};

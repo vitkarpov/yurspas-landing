@@ -1,0 +1,19 @@
+.list
+{
+    padding: 0;
+    margin: 20px 0;
+    list-style: none;
+}
+
+.list__item
+{
+    margin: 12px 0;
+}
+
+.list__item:before
+{
+    content: '—';
+    display: inline-block;
+    width: 20px;
+    margin-left: -20px;
+}

@@ -1,0 +1,25 @@
+.services
+{
+    padding: 50px 0;
+    margin-left: 50%;
+}
+
+.services__caption
+{
+    margin-bottom: 20px;
+}
+
+.services__item
+{
+    display: none;
+}
+
+.services__item_current
+{
+    display: block;
+}
+
+.services__text
+{
+    margin: 20px 0;
+}
