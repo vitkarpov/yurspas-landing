@@ -2,6 +2,7 @@
 {
     position: relative;
     height: 76px;
+    color: white;
 }
 
 .header__inner
@@ -27,23 +28,51 @@
     }
 }
 
-.header__inner:after
+.header__content
 {
-    content: '';
-    display: table;
-    clear: both;
+    position: relative;
+    padding: 0 20%;
 }
 
-.header__logo
+.header__left,
+.header__right
 {
-    float: left;
+    position: absolute;
+    width: 40%;
+}
+
+.header__left
+{
+    left: 0;
+    text-align: left;
+}
+
+.header__right
+{
+    right: 0;
+    text-align: right;
+}
+
+.header__logo,
+.header__menu
+{
+    display: inline-block;
     color: white;
 }
 
-.header__contacts
+.header__logo_hidden.logo
 {
-    float: right;
-    color: white;
+    display: none;
+}
+
+.header__menu.scroll-menu
+{
+    display: none;
+}
+
+.header__menu.scroll-menu_visible
+{
+    display: block;
 }
 
 .header__phone

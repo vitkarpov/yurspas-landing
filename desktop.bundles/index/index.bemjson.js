@@ -15,33 +15,62 @@ module.exports = {
     content : [
         {
             block : 'header',
+            js: true,
             content : [
                 {
                     block: 'page',
                     elem: 'wrapper',
                     content: [
                         {
-                            block: 'logo',
-                            mix: [{ block: 'header', elem: 'logo' }],
+                            block: 'header',
+                            elem: 'left',
                             content: [
                                 {
-                                    elem: 'main',
-                                    content: 'ЮрСпас.ру'
+                                    block: 'logo',
+                                    mix: [{ block: 'header', elem: 'logo' }],
+                                    content: [
+                                        {
+                                            elem: 'main',
+                                            content: 'ЮрСпас.ру'
+                                        },
+                                        {
+                                            elem: 'add',
+                                            content: 'Юридические услуги'
+                                        }
+                                    ]
                                 },
                                 {
-                                    elem: 'add',
-                                    content: 'Юридические услуги'
+                                    block: 'scroll-menu',
+                                    js: true,
+                                    mix: [{ block: 'header', elem: 'menu' }],
+                                    items: [
+                                        {
+                                            url: '#main',
+                                            content: 'Главная'
+                                        },
+                                        {
+                                            url: '#achievments',
+                                            content: 'Награды'
+                                        },
+                                        {
+                                            url: '#about',
+                                            content: 'Адвокат'
+                                        },
+                                        {
+                                            url: '#services',
+                                            content: 'Услуги'
+                                        },
+                                        {
+                                            url: '#contacts',
+                                            content: 'Контакты'
+                                        }
+                                    ]
                                 }
                             ]
                         },
                         {
-                            block: 'button',
-                            mods: { theme: 'islands', size: 'xl', view: 'action' },
-                            text: 'Заказать звонок'
-                        },
-                        {
                             block: 'header',
-                            elem: 'contacts',
+                            elem: 'right',
                             content: [
                                 {
                                     elem: 'phone',
@@ -52,38 +81,11 @@ module.exports = {
                                     content: 'С 9 до 18 часов'
                                 }
                             ]
-                        }
-                    ]
-                },
-                {
-                    block: 'page',
-                    elem: 'wrapper',
-                    content: [
+                        },
                         {
-                            block: 'scroll-menu',
-                            mix: [{ block: 'header', elem: 'menu' }],
-                            items: [
-                                {
-                                    url: '#main',
-                                    content: 'Главная'
-                                },
-                                {
-                                    url: '#achievments',
-                                    content: 'Награды'
-                                },
-                                {
-                                    url: '#about',
-                                    content: 'Адвокат'
-                                },
-                                {
-                                    url: '#services',
-                                    content: 'Услуги'
-                                },
-                                {
-                                    url: '#contacts',
-                                    content: 'Контакты'
-                                }
-                            ]
+                            block: 'button',
+                            mods: { theme: 'islands', size: 'xl', view: 'action' },
+                            text: 'Заказать звонок'
                         }
                     ]
                 }
