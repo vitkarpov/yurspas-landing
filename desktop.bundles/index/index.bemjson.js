@@ -54,11 +54,44 @@ module.exports = {
                             ]
                         }
                     ]
+                },
+                {
+                    block: 'page',
+                    elem: 'wrapper',
+                    content: [
+                        {
+                            block: 'scroll-menu',
+                            mix: [{ block: 'header', elem: 'menu' }],
+                            items: [
+                                {
+                                    url: '#main',
+                                    content: 'Главная'
+                                },
+                                {
+                                    url: '#achievments',
+                                    content: 'Награды'
+                                },
+                                {
+                                    url: '#about',
+                                    content: 'Адвокат'
+                                },
+                                {
+                                    url: '#services',
+                                    content: 'Услуги'
+                                },
+                                {
+                                    url: '#contacts',
+                                    content: 'Контакты'
+                                }
+                            ]
+                        }
+                    ]
                 }
             ]
         },
         {
             block: 'hero',
+            attrs: {id: 'main'},
             content: [
                 {
                     block: 'page',
@@ -149,6 +182,7 @@ module.exports = {
             elem: 'wrapper',
             content: {
                 block: 'achievments',
+                attrs: {id: 'achievments'},
                 content: [
                     {
                         block: 'caption',
@@ -245,6 +279,7 @@ module.exports = {
         },
         {
             block: 'about',
+            attrs: {id: 'about'},
             content: {
                 elem: 'wrapper',
                 content: {
@@ -295,6 +330,7 @@ module.exports = {
             elem: 'wrapper',
             content: {
                 block: 'services',
+                attrs: {id: 'services'},
                 js: true,
                 content: [
                     {
@@ -410,6 +446,7 @@ module.exports = {
             content: [
                 {
                     block: 'caption',
+                    attrs: {id: 'contacts'},
                     mix: [{ block: 'contacts', elem: 'caption' }],
                     content: 'Контакты'
                 }
