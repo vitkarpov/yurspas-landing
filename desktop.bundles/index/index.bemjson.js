@@ -405,6 +405,30 @@ module.exports = {
             }
         },
         {
+            block: 'page',
+            elem: 'wrapper',
+            content: [
+                {
+                    block: 'caption',
+                    mix: [{ block: 'contacts', elem: 'caption' }],
+                    content: 'Контакты'
+                }
+            ]
+        },
+        {
+            block: 'map',
+            mix: [{ block: 'contacts', elem: 'map' }],
+            mods: { type: 'yandex' },
+            height: '450px',
+            js: {
+                coords: [39.644664, 47.255705],
+                balloon: {
+                    contentHeader: "Адвокат Карпов С.В.",
+                    contentBody: "ул. Таганрогская, 124, офис 137"
+                }
+            }
+        },
+        {
             block : 'footer',
             content : [
                 'footer content goes here'

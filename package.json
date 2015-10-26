@@ -23,7 +23,7 @@
     "enb-stylus": "^2.1.0"
   },
   "scripts": {
-    "start": "enb server",
+    "start": "./node_modules/.bin/enb server",
     "postinstall": "npm run deps",
     "deps": "bower i"
   },
