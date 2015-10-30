@@ -281,9 +281,9 @@ module.exports = {
         },
         {
             block: 'about',
-            attrs: {id: 'about'},
             content: {
                 elem: 'wrapper',
+                attrs: {id: 'about'},
                 content: {
                     block: 'page',
                     elem: 'wrapper',
@@ -443,35 +443,74 @@ module.exports = {
             }
         },
         {
-            block: 'page',
-            elem: 'wrapper',
+            block: 'contacts',
+            attrs: {id: 'contacts'},
             content: [
                 {
-                    block: 'caption',
-                    attrs: {id: 'contacts'},
-                    mix: [{ block: 'contacts', elem: 'caption' }],
-                    content: 'Контакты'
+                    block: 'page',
+                    elem: 'wrapper',
+                    content: [
+                        {
+                            block: 'caption',
+                            mix: [{ block: 'contacts', elem: 'caption' }],
+                            content: 'Контакты'
+                        }
+                    ]
+                },
+                {
+                    block: 'map',
+                    mix: [{ block: 'contacts', elem: 'map' }],
+                    mods: { type: 'yandex' },
+                    height: '450px',
+                    js: {
+                        coords: [39.644664, 47.255705],
+                        balloon: {
+                            contentHeader: "Адвокат Карпов С.В.",
+                            contentBody: "ул. Таганрогская, 124, офис 137"
+                        }
+                    }
                 }
             ]
-        },
-        {
-            block: 'map',
-            mix: [{ block: 'contacts', elem: 'map' }],
-            mods: { type: 'yandex' },
-            height: '450px',
-            js: {
-                coords: [39.644664, 47.255705],
-                balloon: {
-                    contentHeader: "Адвокат Карпов С.В.",
-                    contentBody: "ул. Таганрогская, 124, офис 137"
-                }
-            }
         },
         {
             block : 'footer',
-            content : [
-                'footer content goes here'
-            ]
+            content : {
+                block: 'page',
+                elem: 'wrapper',
+                content: [
+                    {
+                        block: 'footer',
+                        elem: 'form',
+                        content: {
+                            block: 'order'
+                        }
+                    },
+                    {
+                        block: 'footer',
+                        elem: 'finish',
+                        content: [
+                            {
+                                elem: 'copy',
+                                content: '&copy; Карпов С.В., 2015'
+                            },
+                            {
+                                elem: 'developer',
+                                content: [
+                                    'Дизайн ',
+                                    { block: 'link', content: 'Денис Шведюк' }
+                                ]
+                            },
+                            {
+                                elem: 'developer',
+                                content: [
+                                    'Разработка ',
+                                    { block: 'link', url: 'http://vitkarpov.com', content: 'Виктор Карпов' }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
         }
     ]
 };

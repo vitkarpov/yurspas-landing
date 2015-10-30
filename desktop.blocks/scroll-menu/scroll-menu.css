@@ -10,7 +10,7 @@
     margin: 0 8px;
 }
 
-.scroll-menu__item .link
+.scroll-menu__item.link
 {
     color: white;
 }

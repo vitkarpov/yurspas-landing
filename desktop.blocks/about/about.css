@@ -27,7 +27,7 @@
 {
     position: relative;
     background: #334960;
-    padding-bottom: 200px;
+    padding: 80px 0 200px 0;
 }
 
 .about__wrapper:before
