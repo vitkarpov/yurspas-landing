@@ -5,11 +5,11 @@ module.exports = {
     head : [
         { elem : 'meta', attrs : { name : 'description', content : '' } },
         { elem : 'meta', attrs : { name : 'viewport', content : 'width=device-width, initial-scale=1' } },
-        { elem : 'css', url : 'index.min.css' },
-        { elem : 'googlefont', font: 'Roboto+Slab:400,700:cyrillic' }
+        { elem : 'css', url : 'index.min.css' }
     ],
     scripts: [
-        { elem : 'js', url : 'index.min.js' }
+        { elem : 'js', url : 'index.min.js' },
+        { block : 'font', mods: { type: 'google' }, family: 'Roboto Slab', weights: [400,700], sets: ['cyrillic'] }
     ],
     mods : { theme : 'islands' },
     content : [
@@ -125,7 +125,8 @@ module.exports = {
                                             elem: 'item',
                                             content: [
                                                 {
-                                                    elem: 'caption',
+                                                    block: 'caption',
+                                                    mix: [{ block: 'advantages', elem: 'caption' }],
                                                     content: [
                                                         {
                                                             tag: 'b',
@@ -142,7 +143,8 @@ module.exports = {
                                             elem: 'item',
                                             content: [
                                                 {
-                                                    elem: 'caption',
+                                                    block: 'caption',
+                                                    mix: [{ block: 'advantages', elem: 'caption' }],
                                                     content: [
                                                         {
                                                             tag: 'b',
@@ -159,7 +161,8 @@ module.exports = {
                                             elem: 'item',
                                             content: [
                                                 {
-                                                    elem: 'caption',
+                                                    block: 'caption',
+                                                    mix: [{ block: 'advantages', elem: 'caption' }],
                                                     content: [
                                                         {
                                                             tag: 'b',
@@ -207,7 +210,8 @@ module.exports = {
                                         mods: { type: 'medal' },
                                         content: [
                                             {
-                                                elem: 'item-caption',
+                                                block: 'caption',
+                                                mix: [{ block: 'achievments', elem: 'item-caption' }],
                                                 content: 'Медаль прокуратуры'
                                             }
                                         ]
@@ -226,7 +230,8 @@ module.exports = {
                                         mods: { type: 'diploma' },
                                         content: [
                                             {
-                                                elem: 'item-caption',
+                                                block: 'caption',
+                                                mix: [{ block: 'achievments', elem: 'item-caption' }],
                                                 content: 'Грамота Президента'
                                             }
                                         ]
@@ -245,7 +250,8 @@ module.exports = {
                                         mods: { type: 'international' },
                                         content: [
                                             {
-                                                elem: 'item-caption',
+                                                block: 'caption',
+                                                mix: [{ block: 'achievments', elem: 'item-caption' }],
                                                 content: 'Международный статус юриста'
                                             }
                                         ]
@@ -264,7 +270,8 @@ module.exports = {
                                         mods: { type: 'expert' },
                                         content: [
                                             {
-                                                elem: 'item-caption',
+                                                block: 'caption',
+                                                mix: [{ block: 'achievments', elem: 'item-caption' }],
                                                 content: 'Статус эксперта'
                                             }
                                         ]

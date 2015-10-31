@@ -1,19 +1,24 @@
-block('page').elem('wrapper')(
-    content()(function() {
+block('font').mod('type', 'google')(
+    js()(function() {
         return {
-            elem: 'inner',
-            content: applyNext()
+            family: this.ctx.family,
+            weights: this.ctx.weights,
+            sets: this.ctx.sets
         };
-    })
-);
+    }),
 
-block('page').elem('googlefont').match(function() { return this.ctx.font })(
-    def()(function() {
-        return applyCtx({
+    content()(function() {
+        var font = [
+            this.ctx.family.split(' ').join('+'),
+            this.ctx.weights.join(','),
+            this.ctx.sets.join(',')
+        ].join(':');
+
+        return {
             tag: 'script',
             content: (
               "var WebFontConfig = {" +
-                "google: { families: [ '" + this.ctx.font + "' ] }" +
+                "google: { families: [ '" + font + "' ] }" +
               "};" +
               "(function() {" +
                 "var wf = document.createElement('script');" +
@@ -25,6 +30,6 @@ block('page').elem('googlefont').match(function() { return this.ctx.font })(
                 "s.parentNode.insertBefore(wf, s);" +
               "})();"
             )
-        });
+        };
     })
 )

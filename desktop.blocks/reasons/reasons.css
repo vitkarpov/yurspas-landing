@@ -5,7 +5,6 @@
 
 .reasons__caption
 {
-    font-family: "Roboto Slab";
     margin: 20px 25%;
 }
 
@@ -74,7 +73,7 @@
 
 .reasons__subcaption
 {
-    font-family: "Roboto Slab";
+    font-weight: normal;
     font-size: 1.3em;
     line-height: 1.2;
 

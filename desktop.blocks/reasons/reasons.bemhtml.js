@@ -9,7 +9,8 @@ block('reasons')(
                 mods: { pic: item.pic },
                 content: [
                     {
-                        elem: 'subcaption',
+                        block: 'caption',
+                        mix: [{ block: 'reasons', elem: 'subcaption' }],
                         content: item.caption
                     },
                     {

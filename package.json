@@ -23,6 +23,7 @@
     "enb-stylus": "^2.1.0"
   },
   "scripts": {
+    "build": "YENV=production ./node_modules/.bin/enb make --no-cache",
     "start": "./node_modules/.bin/enb server",
     "postinstall": "npm run deps",
     "deps": "bower i"

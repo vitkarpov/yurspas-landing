@@ -5,11 +5,16 @@
 
 .logo__main
 {
+    font-family: "PT Serif";
     display: inline-block;
 
-    font-family: "Roboto Slab";
     font-weight: bold;
     font-size: 1.5em;
+}
+
+.fonts-loaded .logo__main
+{
+    font-family: "Roboto Slab";
 }
 
 .logo__add
