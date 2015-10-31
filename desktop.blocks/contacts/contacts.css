@@ -1,6 +1,6 @@
 .contacts
 {
-    padding: 50px 0;
+    padding-top: 50px;
 }
 
 .contacts__caption
@@ -11,4 +11,5 @@
 .contacts__map
 {
     margin-top: 50px;
+    height: 450px;
 }

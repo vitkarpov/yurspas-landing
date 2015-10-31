@@ -2,4 +2,41 @@
 {
     background: #2C3E52;
     color: white;
+
+    padding: 20px 0;
+}
+
+.footer__finish
+{
+    border-top: 1px solid rgba(191,153,0,0.8);
+    padding-top: 20px;
+}
+
+.footer__finish:after
+{
+    content: '';
+
+    display: block;
+    clear: both;
+}
+
+.footer__copy
+{
+    float: right;
+}
+
+.footer__developer
+{
+    font-size: 0.8em;
+}
+
+.footer .link
+{
+    color: white;
+}
+
+.footer__form
+{
+    padding-bottom: 20px;
+    margin-right: 50%;
 }
