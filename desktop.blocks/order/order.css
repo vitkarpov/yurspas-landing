@@ -8,3 +8,25 @@
 {
     margin: 12px 0;
 }
+
+.order__item_request_done,
+.order__item_request_fail
+{
+    display: none;
+}
+
+.order_done .order__item_request_done,
+.order_fail .order__item_request_fail
+{
+    display: block;
+}
+
+.order__item_request_done
+{
+    color: green;
+}
+
+.order__item_request_fail
+{
+    color: red;
+}

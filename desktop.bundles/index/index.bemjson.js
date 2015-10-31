@@ -114,8 +114,9 @@ module.exports = {
                                 },
                                 {
                                     block: 'button',
-                                    mods: { theme: 'islands', size: 'l', view: 'action', order: true },
-                                    text: 'Заказать звонок'
+                                    url: 'http://www.yurspas.ru/consult',
+                                    mods: { theme: 'islands', size: 'l', view: 'action', type: 'link' },
+                                    text: 'Задать вопрос'
                                 },
                                 {
                                     block: 'advantages',
