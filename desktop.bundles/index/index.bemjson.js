@@ -484,6 +484,33 @@ module.exports = {
                             contentBody: "ул. Таганрогская, 124, офис 137"
                         }
                     }
+                },
+                {
+                    block: 'page',
+                    elem: 'wrapper',
+                    content: {
+                        block: 'contacts',
+                        elem: 'content',
+                        content: [
+                            {
+                                elem: 'form',
+                                content: {
+                                    block: 'form',
+                                    mods: { type: 'question' },
+                                    teaser: [
+                                        'Если у&nbsp;вас есть срочный вопрос — ',
+                                        { tag: 'b', content: 'позвоните на&nbsp;мобильный' }
+                                    ]
+                                }
+                            },
+                            {
+                                elem: 'info',
+                                content: [
+                                    'foo'
+                                ]
+                            }
+                        ]
+                    }
                 }
             ]
         },
@@ -497,7 +524,8 @@ module.exports = {
                         block: 'footer',
                         elem: 'form',
                         content: {
-                            block: 'order',
+                            block: 'form',
+                            mods: { type: 'order' },
                             caption: 'Оставьте заявку на услугу'
                         }
                     },
@@ -528,7 +556,8 @@ module.exports = {
             js: true,
             mods : { theme : 'islands', autoclosable: true, order: true },
             content : {
-                block: 'order',
+                block: 'form',
+                mods: { type: 'order' },
                 caption: 'Оставьте заявку на услугу'
             }
         }

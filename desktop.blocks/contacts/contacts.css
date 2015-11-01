@@ -13,3 +13,28 @@
     margin-top: 50px;
     height: 450px;
 }
+
+.contacts__content
+{
+    margin-left: 50%;
+    padding: 50px 0;
+}
+
+.contacts__content:after
+{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.contacts__form
+{
+    float: left;
+    width: 100%;
+    margin-left: -100%;
+}
+
+.contacts__info
+{
+    padding-left: 50px;
+}

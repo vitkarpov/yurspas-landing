@@ -1,0 +1,82 @@
+.form__caption
+{
+    margin: 20px 0;
+    font-size: 1.5em;
+}
+
+.form__item
+{
+    margin: 12px 0;
+}
+
+.form__item:after
+{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.form__item_request_done,
+.form__item_request_fail
+{
+    display: none;
+}
+
+.form_done .form__item_request_done,
+.form_fail .form__item_request_fail
+{
+    display: block;
+}
+
+.form__item_request_done
+{
+    color: green;
+}
+
+.form__item_request_fail
+{
+    color: red;
+}
+
+.form__inputs-wrapper
+{
+    margin: -12px 0;
+}
+
+.form__inputs-wrapper:after
+{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.form__inputs-wrapper .form__item.input_width_available
+{
+    width: 49%;
+}
+
+.form__inputs-wrapper .form__item:first-child
+{
+    float: left;
+}
+
+.form__inputs-wrapper .form__item:last-child
+{
+    float: right;
+}
+
+.form__item .textarea
+{
+    margin-bottom: -5px;
+}
+
+.form__button-right
+{
+    float: right;
+}
+
+.form__teaser
+{
+    overflow: hidden;
+    margin-right: 50%;
+}

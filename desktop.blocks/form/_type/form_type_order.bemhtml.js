@@ -1,15 +1,9 @@
-block('order')(
-    tag()('form'),
-
-    attrs()({ action: '/order', method: 'POST' }),
-
-    js()(true),
-
+block('form').mod('type', 'order')(
     content()(function() {
         return [
             {
                 block: 'caption',
-                mix: [{ block: 'order', elem: 'caption' }],
+                mix: [{ block: 'form', elem: 'caption' }],
                 content: this.ctx.caption
             },
             {
@@ -28,7 +22,7 @@ block('order')(
                         elem: 'item',
                         content: {
                             block : 'input',
-                            mix: [{ block: 'order', elem: 'phone' }],
+                            mix: [{ block: 'form', elem: 'phone' }],
                             name: 'phone',
                             mods : { theme : 'islands', size : 'xl', width: 'available' },
                             placeholder : 'Телефон'
@@ -48,22 +42,21 @@ block('order')(
                             ]
                         }
                     },
-                    {
-                        elem: 'item',
-                        mods: { request: 'done' },
-                        content: 'Ваша заявка отправлена!'
-                    },
-                    {
-                        elem: 'item',
-                        mods: { request: 'fail' },
-                        content: 'К сожалению, не удалось отправить заявку. Попробуйте позднее.'
-                    },
+                    apply('states'),
                     {
                         elem: 'item',
                         content: {
                             block: 'button',
                             mods: { theme: 'islands', size: 'xl', view: 'action', type: 'submit' },
                             text: 'Заказать звонок'
+                        }
+                    },
+                    {
+                        tag: 'input',
+                        attrs: {
+                            name: 'type',
+                            value: 'order',
+                            type: 'hidden'
                         }
                     }
                 ]
