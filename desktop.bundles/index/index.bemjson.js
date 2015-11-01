@@ -114,8 +114,7 @@ module.exports = {
                                 },
                                 {
                                     block: 'button',
-                                    url: 'http://www.yurspas.ru/consult',
-                                    mods: { theme: 'islands', size: 'l', view: 'action', type: 'link' },
+                                    mods: { theme: 'islands', size: 'l', question: true },
                                     text: 'Задать вопрос'
                                 },
                                 {
@@ -327,7 +326,7 @@ module.exports = {
                             },
                             {
                                 block: 'button',
-                                mods: { theme: 'islands', size: 'l', view: 'action', order: true },
+                                mods: { theme: 'islands', size: 'l', order: true },
                                 text: 'Заказать звонок'
                             }
                         ]
@@ -411,7 +410,7 @@ module.exports = {
                     },
                     {
                         block: 'button',
-                        mods: { theme: 'islands', size: 'l', view: 'action', order: true },
+                        mods: { theme: 'islands', size: 'l', order: true },
                         text: 'Заказать звонок'
                     }
                 ]
@@ -491,6 +490,7 @@ module.exports = {
                     content: {
                         block: 'contacts',
                         elem: 'content',
+                        attrs: {id: 'question'},
                         content: [
                             {
                                 elem: 'form',
@@ -506,7 +506,39 @@ module.exports = {
                             {
                                 elem: 'info',
                                 content: [
-                                    'foo'
+                                    {
+                                        elem: 'subcaption',
+                                        content: 'Офис'
+                                    },
+                                    {
+                                        elem: 'address',
+                                        content: '344016, Россия, Ростов-на-Дону, ул. Таганрогская, 124'
+                                    },
+                                    {
+                                        elem: 'icons',
+                                        content: [
+                                            {
+                                                elem: 'icon',
+                                                mods: { type: 'phone' },
+                                                content: '+7 (909) 409-80-26'
+                                            },
+                                            {
+                                                elem: 'icon',
+                                                mods: { type: 'phone' },
+                                                content: '+7 (909) 409-80-26'
+                                            },
+                                            {
+                                                elem: 'icon',
+                                                mods: { type: 'mail' },
+                                                content: 'advokat@yurspas.ru'
+                                            },
+                                            {
+                                                elem: 'icon',
+                                                mods: { type: 'skype' },
+                                                content: 'karpov2011'
+                                            }
+                                        ]
+                                    }
                                 ]
                             }
                         ]
