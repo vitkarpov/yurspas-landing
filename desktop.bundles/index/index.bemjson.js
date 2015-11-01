@@ -535,7 +535,7 @@ module.exports = {
                                             {
                                                 elem: 'icon',
                                                 mods: { type: 'skype' },
-                                                content: 'karpov2011'
+                                                content: 'karpov20111'
                                             }
                                         ]
                                     }

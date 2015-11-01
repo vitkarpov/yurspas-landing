@@ -10,7 +10,11 @@
     margin: 0 8px;
 }
 
-.scroll-menu__item.link
+.scroll-menu__item .link
 {
     color: white;
+    text-decoration: none;
+    line-height: 1.2;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }

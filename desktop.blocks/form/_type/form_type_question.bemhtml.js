@@ -16,7 +16,7 @@ block('form').mod('type', 'question')(
                         mix: [{ block: 'form', elem: 'email' }, { block: 'form', elem: 'item' }],
                         name: 'email',
                         mods : { theme : 'islands', size : 'xl', width: 'available' },
-                        placeholder : 'email'
+                        placeholder : 'Электронная почта для ответа'
                     }
                 ]
             },
