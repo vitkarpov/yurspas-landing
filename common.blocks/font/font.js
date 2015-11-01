@@ -1,12 +1,8 @@
-modules.define('font', ['i-bem__dom', 'font__observer', 'vow', 'jquery__cookies'], function(provide, BEMDOM, Observer, vow, cookies) {
+modules.define('font', ['i-bem__dom', 'font__observer', 'vow', 'jquery__cookies'], function(provide, BEMDOM, Observer, vow) {
 
 provide(BEMDOM.decl('font', {
     onSetMod: {
         'js': function() {
-            if(BEMDOM.doc.find('html').hasClass('fonts-loaded')) {
-                return;
-            }
-
             var observers = this.params.weights.map(function(weight) {
                 return new Observer(this.params.family, {
                     weight: weight
@@ -20,7 +16,6 @@ provide(BEMDOM.decl('font', {
 
     _onLoaded: function() {
         BEMDOM.doc.find('html').addClass('fonts-loaded');
-        cookies('fonts-loaded', true);
     }
 }));
 

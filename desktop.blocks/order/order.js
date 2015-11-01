@@ -1,10 +1,11 @@
-modules.define('order', ['jquery', 'i-bem__dom'], function(provide, $, BEMDOM) {
+modules.define('order', ['jquery', 'i-bem__dom', 'jquery__maskedinput'], function(provide, $, BEMDOM) {
 
 provide(BEMDOM.decl(this.name, {
     onSetMod: {
         'js': {
             'inited': function() {
                 this.bindTo('submit', this._onSubmit);
+                this.elem('phone').bem('input').elem('control').mask('+7 (999) 999-9999');
             }
         }
     },

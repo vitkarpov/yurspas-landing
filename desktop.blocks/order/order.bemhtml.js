@@ -28,6 +28,7 @@ block('order')(
                         elem: 'item',
                         content: {
                             block : 'input',
+                            mix: [{ block: 'order', elem: 'phone' }],
                             name: 'phone',
                             mods : { theme : 'islands', size : 'xl', width: 'available' },
                             placeholder : 'Телефон'

@@ -513,7 +513,7 @@ module.exports = {
                                 elem: 'developer',
                                 content: [
                                     'Built with ❤ by ',
-                                    { block: 'link', url: 'http://landing4me.ru', content: 'landing4me' },
+                                    { block: 'link', url: 'http://landing4.me', content: 'landing4.me' },
                                     ' and ',
                                     { block: 'link', url: 'http://vitkarpov.com', content: 'Vit Karpov' }
                                 ]
