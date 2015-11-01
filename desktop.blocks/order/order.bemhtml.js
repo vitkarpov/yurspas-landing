@@ -36,6 +36,20 @@ block('order')(
                     },
                     {
                         elem: 'item',
+                        content: {
+                            block : 'select',
+                            mods : { mode : 'check', theme : 'islands', size : 'xl' },
+                            name : 'service',
+                            text : 'Услуги',
+                            options : [
+                                { val : 1, text : 'Гражданские' },
+                                { val : 2, text : 'Уголовные' },
+                                { val : 3, text : 'Военные' }
+                            ]
+                        }
+                    },
+                    {
+                        elem: 'item',
                         mods: { request: 'done' },
                         content: 'Ваша заявка отправлена!'
                     },
