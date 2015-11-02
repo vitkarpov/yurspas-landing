@@ -23,3 +23,12 @@
     max-width: 1300px;
     margin: 0 auto;
 }
+
+.page__subcaption
+{
+    text-align: center;
+    font-size: 1.1em;
+    color: gray;
+
+    margin: 12px 0;
+}

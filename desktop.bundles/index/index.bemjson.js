@@ -45,10 +45,6 @@ module.exports = {
                                     mix: [{ block: 'header', elem: 'menu' }],
                                     items: [
                                         {
-                                            url: '#main',
-                                            content: 'Главная'
-                                        },
-                                        {
                                             url: '#achievments',
                                             content: 'Награды'
                                         },
@@ -59,6 +55,14 @@ module.exports = {
                                         {
                                             url: '#services',
                                             content: 'Услуги'
+                                        },
+                                        {
+                                            url: '#portfolio',
+                                            content: 'Портфолио'
+                                        },
+                                        {
+                                            url: '#reviews',
+                                            content: 'Отзывы'
                                         },
                                         {
                                             url: '#contacts',
@@ -457,6 +461,51 @@ module.exports = {
             }
         },
         {
+            block: 'portfolio',
+            attrs: {id: 'portfolio'},
+            content: {
+                block: 'page',
+                elem: 'wrapper',
+                content: [
+                    {
+                        block: 'caption',
+                        mix: [{ block: 'portfolio', elem: 'caption' }],
+                        content: 'Портфолио адвоката'
+                    },
+                    {
+                        elem: 'subcaption',
+                        content: 'Работа адвоката Карпова над судебными делами'
+                    },
+                    {
+                        block: 'portfolio',
+                        elem: 'content',
+                        content: [
+                            {
+                                elem: 'item',
+                                content: 'Освобождение подзащитного от наказания',
+                                date: '16 июня 2015 г.'
+                            },
+                            {
+                                elem: 'item',
+                                content: 'Адвокат существенно снизил наказание',
+                                date: '16 апреля 2015 г.'
+                            },
+                            {
+                                elem: 'item',
+                                content: 'Суд прекратил уголовное дело в отношении офицера',
+                                date: '17 марта 2014 г.'
+                            },
+                            {
+                                elem: 'item',
+                                content: 'Адвокат добился прекращение уголовного дела',
+                                date: '4 сентября 2013 г.'
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
             block: 'contacts',
             attrs: {id: 'contacts'},
             content: [
@@ -467,7 +516,11 @@ module.exports = {
                         {
                             block: 'caption',
                             mix: [{ block: 'contacts', elem: 'caption' }],
-                            content: 'Контакты'
+                            content: 'Контакты и онлайн-консультация'
+                        },
+                        {
+                            elem: 'subcaption',
+                            content: 'Оставьте свой вопрос и адвокат Карпов свяжется с вами'
                         }
                     ]
                 },
@@ -525,7 +578,7 @@ module.exports = {
                                             {
                                                 elem: 'icon',
                                                 mods: { type: 'phone' },
-                                                content: '+7 (909) 409-80-26'
+                                                content: '+7 (863) 223-24-40'
                                             },
                                             {
                                                 elem: 'icon',

@@ -1,7 +1,22 @@
 .scroll-menu
 {
+    position: relative;
     white-space: nowrap;
     margin-left: -8px;
+    overflow: hidden;
+}
+
+.scroll-menu:after
+{
+    content: '';
+
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+
+    width: 20px;
+    background: linear-gradient(to left, black, transparent);
 }
 
 .scroll-menu__item
