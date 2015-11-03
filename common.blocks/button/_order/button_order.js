@@ -7,7 +7,7 @@ provide(Button.decl({ modName : 'order', modVal : true }, {
                 this.__base.apply(this, arguments);
 
                 var page = this.findBlockOutside('page');
-                var modal = page.findBlockInside('modal');
+                var modal = page.findBlockInside({ block: 'modal', modName: 'order', modVal: true });
 
                 this.bindTo('click', function() {
                     modal.setMod('visible', true)

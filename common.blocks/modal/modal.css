@@ -1,5 +1,15 @@
-.modal_order .modal__content
+.modal__content
 {
     padding: 20px 40px;
+}
+
+.modal_order .modal__content
+{
     width: 330px;
+}
+
+.modal_portfolio .modal__content
+{
+    width: 80%;
+    max-width: 1200px;
 }
