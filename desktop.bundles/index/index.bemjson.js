@@ -558,8 +558,7 @@ module.exports = {
                                     elem: 'slide',
                                     content: [
                                         {
-                                            block: 'reviews',
-                                            elem: 'preview',
+                                            block: 'reviews-preview',
                                             url: 'http://yurspas.ru/img/upload/review-10.jpg'
                                         },
                                         {
@@ -583,8 +582,7 @@ module.exports = {
                                     elem: 'slide',
                                     content: [
                                         {
-                                            block: 'reviews',
-                                            elem: 'preview',
+                                            block: 'reviews-preview',
                                             url: 'http://yurspas.ru/img/upload/review-12.jpg'
                                         },
                                         {
@@ -608,8 +606,7 @@ module.exports = {
                                     elem: 'slide',
                                     content: [
                                         {
-                                            block: 'reviews',
-                                            elem: 'preview',
+                                            block: 'reviews-preview',
                                             url: 'http://yurspas.ru/img/upload/review-13.jpg'
                                         },
                                         {

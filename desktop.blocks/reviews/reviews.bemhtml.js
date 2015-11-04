@@ -8,18 +8,3 @@ block('reviews').elem('quote')(
         });
     })
 )
-
-block('reviews').elem('preview')(
-    content()(function() {
-        return {
-            elem: 'preview-inner',
-            content: {
-                bem: false,
-                tag: 'img',
-                attrs: {
-                    src: this.ctx.url
-                }
-            }
-        }
-    })
-)

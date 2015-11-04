@@ -7,14 +7,14 @@
 {
     text-align: center;
 
-    margin: 0 20%;
+    margin: 0 15%;
     min-height: 200px;
 }
 
 .reviews__slide
 {
     display: none;
-    padding: 0 20px;
+    padding: 0 30px;
 }
 
 .reviews_js_inited .reviews__slide
@@ -56,49 +56,6 @@
 .reviews__author:after
 {
     left: 100%;
-}
-
-.reviews__preview
-{
-    margin: 50px 0;
-}
-
-.reviews__preview-inner
-{
-    position: relative;
-    display: inline-block;
-    overflow: hidden;
-
-    width: 180px;
-    height: 180px;
-}
-
-.reviews__preview-inner:after
-{
-    content: '';
-
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-
-    background: url('preview-bg.png') no-repeat;
-}
-
-.reviews__preview-inner:before
-{
-    content: '';
-
-    display: inline-block;
-    height: 100%;
-    vertical-align: middle;
-}
-
-.reviews__preview-inner img
-{
-    max-width: 180px;
-    height: auto;
 }
 
 .reviews__quote
