@@ -1,0 +1,117 @@
+.reviews
+{
+    padding: 50px 0;
+}
+
+.reviews__slider
+{
+    text-align: center;
+
+    margin: 0 20%;
+    min-height: 200px;
+}
+
+.reviews__slide
+{
+    display: none;
+    padding: 0 20px;
+}
+
+.reviews_js_inited .reviews__slide
+{
+    display: block;
+}
+
+.reviews__caption
+{
+    text-align: center;
+}
+
+.reviews__author
+{
+    position: relative;
+    display: inline-block;
+    padding: 0 25px;
+
+    font-weight: bold;
+}
+
+.reviews__author:before,
+.reviews__author:after
+{
+    content: '';
+
+    position: absolute;
+    width: 50px;
+    height: 1px;
+    top: 50%;
+    background: #008dde;
+}
+
+.reviews__author:before
+{
+    right: 100%;
+}
+
+.reviews__author:after
+{
+    left: 100%;
+}
+
+.reviews__preview
+{
+    margin: 50px 0;
+}
+
+.reviews__preview-inner
+{
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+
+    width: 180px;
+    height: 180px;
+}
+
+.reviews__preview-inner:after
+{
+    content: '';
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+
+    background: url('preview-bg.png') no-repeat;
+}
+
+.reviews__preview-inner:before
+{
+    content: '';
+
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.reviews__preview-inner img
+{
+    max-width: 180px;
+    height: auto;
+}
+
+.reviews__quote
+{
+    margin: 25px 0;
+}
+
+.reviews__quote p:first-child:before
+{
+    content: "«";
+}
+
+.reviews__quote p:last-child:after
+{
+    content: "»";
+}
