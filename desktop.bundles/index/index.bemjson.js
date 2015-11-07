@@ -83,13 +83,13 @@ module.exports = {
                                 {
                                     elem: 'hours',
                                     content: 'С 9 до 18 часов'
+                                },
+                                {
+                                    block: 'button',
+                                    mods: { theme: 'islands', size: 'xl', view: 'action', order: true },
+                                    text: 'Заказать звонок'
                                 }
                             ]
-                        },
-                        {
-                            block: 'button',
-                            mods: { theme: 'islands', size: 'xl', view: 'action', order: true },
-                            text: 'Заказать звонок'
                         }
                     ]
                 }
@@ -675,7 +675,7 @@ module.exports = {
                                 elem: 'form',
                                 content: {
                                     block: 'form',
-                                    mods: { type: 'question' },
+                                    mods: { type: 'question'},
                                     teaser: [
                                         'Если у&nbsp;вас есть срочный вопрос — ',
                                         { tag: 'b', content: 'позвоните на&nbsp;мобильный' }
@@ -703,7 +703,6 @@ module.exports = {
                                             },
                                             {
                                                 elem: 'icon',
-                                                mods: { type: 'phone' },
                                                 content: '+7 (863) 223-24-40'
                                             },
                                             {
@@ -736,7 +735,7 @@ module.exports = {
                         elem: 'form',
                         content: {
                             block: 'form',
-                            mods: { type: 'order' },
+                            mods: { type: 'footer' },
                             caption: 'Оставьте заявку на услугу'
                         }
                     },

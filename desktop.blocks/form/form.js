@@ -5,6 +5,14 @@ provide(BEMDOM.decl(this.name, {
         'js': {
             'inited': function() {
                 this.bindTo('submit', this._onSubmit);
+
+                if (this.elem('phone').length) {
+                    var input = this.elem('phone').bem('input');
+
+                    input
+                        .elem('control')
+                        .mask('+7 (999) 999-9999');
+                }
             }
         }
     },

@@ -80,3 +80,36 @@
     overflow: hidden;
     margin-right: 50%;
 }
+
+.form__textarea
+{
+    height: 150px;
+}
+
+.form__cols
+{
+    display: table;
+    width: 100%;
+    margin: -5px;
+}
+
+.form__col
+{
+    width: 30%;
+    display: table-cell;
+    padding: 5px;
+}
+
+.form__col .form__item:first-child
+{
+    margin-top: 0;
+}
+
+.form__col .form__item:last-child {
+    margin-bottom: 0;
+}
+
+.form_type_footer .button_type_submit
+{
+    height: 100%;
+}

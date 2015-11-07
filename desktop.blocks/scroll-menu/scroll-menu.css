@@ -4,6 +4,8 @@
     white-space: nowrap;
     margin-left: -8px;
     overflow: hidden;
+    padding-right: 15px;
+    z-index: 5;
 }
 
 .scroll-menu:after
@@ -16,7 +18,7 @@
     height: 100%;
 
     width: 20px;
-    background: linear-gradient(to left, black, transparent);
+    background: linear-gradient(to right, black, transparent);
 }
 
 .scroll-menu__item

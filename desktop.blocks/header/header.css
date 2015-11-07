@@ -22,6 +22,11 @@
     text-align: center;
 }
 
+.header__inner .page__inner
+{
+    height: 40px;
+}
+
 @media (max-width: 1000px) {
     .header__inner {
         position: absolute;
@@ -38,7 +43,6 @@
 .header__right
 {
     position: absolute;
-    width: 40%;
 }
 
 .header__left
@@ -86,7 +90,7 @@
 .header__hours
 {
     display: inline-block;
-    margin-left: 20px;
+    margin: 0 20px;
 
     vertical-align: top;
 }

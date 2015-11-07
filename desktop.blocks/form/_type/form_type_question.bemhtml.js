@@ -24,6 +24,7 @@ block('form').mod('type', 'question')(
                 elem: 'item',
                 content: {
                     block : 'textarea',
+                    mix: [{ block: 'form', elem: 'textarea' }],
                     name: 'question',
                     mods : { theme : 'islands', size : 'xl', width : 'available' },
                     placeholder : 'Задайте свой вопрос'
