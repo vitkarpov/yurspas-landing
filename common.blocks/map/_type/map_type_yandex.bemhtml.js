@@ -1,15 +1,14 @@
 block('map').mod('type', 'yandex')(
     def()(function() {
-        this.ctx.mapid = 'map-' + Math.random();
+        this.ctx.mapid = this.generateId();
 
         return applyNext();
     }),
 
     js()(function() {
-        var params = this.ctx.js || {};
-        params.mapid = this.ctx.mapid;
-
-        return params;
+        return this.extend(applyNext(), {
+            mapid: this.ctx.mapid
+        });
     }),
 
     content()(function() {
