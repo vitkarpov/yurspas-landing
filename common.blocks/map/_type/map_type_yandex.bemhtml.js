@@ -1,13 +1,7 @@
 block('map').mod('type', 'yandex')(
-    def()(function() {
-        this.ctx.mapid = this.generateId();
-
-        return applyNext();
-    }),
-
     js()(function() {
         return this.extend(applyNext(), {
-            mapid: this.ctx.mapid
+            mapid: this.generateId()
         });
     }),
 
@@ -39,7 +33,7 @@ block('map').mod('type', 'yandex')(
             {
                 bem: false,
                 attrs: {
-                    id: this.ctx.mapid,
+                    id: this.generateId(),
                     style: style
                 }
             }
