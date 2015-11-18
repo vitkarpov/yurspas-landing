@@ -5,14 +5,16 @@ node_modules/
 .project
 .svn
 npm-debug.log
-images
+*bundles/*/images/
 
 # bem
 .bem/cache/
 .enb/tmp/
 *bundles*/*/*.*
-!*bundles*/*/*.bemjson.js
+!*bundles*/*/*.bemdecl.js
+*bundles*/*/*.bemhtml.bemdecl.js
 !*bundles*/.bem/*
 *pages*/*/*.*
-!*pages*/*/*.bemjson.js
+!*pages*/*/*.bemdecl.js
+*pages*/*/*.bemhtml.bemdecl.js
 !*pages*/.bem/*
