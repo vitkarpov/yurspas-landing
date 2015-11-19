@@ -1,3 +1,6 @@
 block('page').content()(function() {
-    return '';
+    return [
+        { block: 'header' },
+        { block: 'footer' }
+    ];
 })

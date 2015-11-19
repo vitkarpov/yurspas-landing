@@ -1,3 +1,36 @@
 {
-    "title": "Юрспас"
+    "title": "Юрспас",
+    "logo": {
+        "main": "Юрспас.ру",
+        "ext": "Юридические услуги"
+    },
+    "phone": "8 909 409-80-26",
+    "hours": "С 9 до 18 часов",
+    "call": "Заказать звонок",
+    "menu": [
+        {
+            "url": "#achievments",
+            "content": "Награды"
+        },
+        {
+            "url": "#about",
+            "content": "Адвокат"
+        },
+        {
+            "url": "#services",
+            "content": "Услуги"
+        },
+        {
+            "url": "#portfolio",
+            "content": "Портфолио"
+        },
+        {
+            "url": "#reviews",
+            "content": "Отзывы"
+        },
+        {
+            "url": "#contacts",
+            "content": "Контакты"
+        }
+    ]
 }

@@ -1,6 +1,8 @@
 block('scroll-menu')(
+    js()(true),
+
     content()(function() {
-        return this.ctx.items.map(function(item) {
+        return applyNext().map(function(item) {
             return {
                 elem: 'item',
                 content: {
