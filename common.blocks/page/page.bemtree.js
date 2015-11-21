@@ -7,6 +7,7 @@ block('page').content()(function() {
         { block: 'services' },
         { block: 'reasons' },
         { block: 'portfolio' },
+        { block: 'reviews' },
         { block: 'footer' },
         {
             block : 'modal',
