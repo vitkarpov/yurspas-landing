@@ -1,0 +1,6 @@
+({
+    shouldDeps: [
+        'caption',
+        'portfolio-item'
+    ]
+})
