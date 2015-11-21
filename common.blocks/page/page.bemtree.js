@@ -8,6 +8,7 @@ block('page').content()(function() {
         { block: 'reasons' },
         { block: 'portfolio' },
         { block: 'reviews' },
+        { block: 'contacts' },
         { block: 'footer' },
         {
             block : 'modal',
