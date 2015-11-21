@@ -11,7 +11,7 @@ block('page').content()(function() {
             content : {
                 block: 'form',
                 mods: { type: 'order' },
-                caption: 'Оставьте заявку на услугу'
+                caption: this.data['application-caption']
             }
         }
     ];
