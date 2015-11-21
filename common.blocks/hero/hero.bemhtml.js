@@ -1,3 +1,7 @@
+block('hero')(
+    attrs()({ id: 'main' })
+)
+
 block('hero').elem('caption')(
     tag()('h1')
 );
