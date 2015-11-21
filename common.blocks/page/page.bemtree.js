@@ -5,6 +5,7 @@ block('page').content()(function() {
         { block: 'achievments' },
         { block: 'about' },
         { block: 'services' },
+        { block: 'reasons' },
         { block: 'footer' },
         {
             block : 'modal',

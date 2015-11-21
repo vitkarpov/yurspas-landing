@@ -1,9 +1,18 @@
 block('reasons')(
+    replace()(function() {
+        return {
+            block: 'page',
+            elem: 'wrapper',
+            content: applyNext()
+        }
+    }),
+
     content()(function() {
         var line1 = [];
         var line2 = [];
+        var content = applyNext();
 
-        this.ctx.items.forEach(function(item, i) {
+        content.items.forEach(function(item, i) {
             var content = {
                 elem: 'item',
                 mods: { pic: item.pic },
@@ -30,7 +39,7 @@ block('reasons')(
             {
                 block: 'caption',
                 mix: [{ block: 'reasons', elem: 'caption' }],
-                content: this.ctx.caption
+                content: content.caption
             },
             {
                 elem: 'items',
