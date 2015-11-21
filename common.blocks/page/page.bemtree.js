@@ -3,6 +3,8 @@ block('page').content()(function() {
         { block: 'header' },
         { block: 'hero' },
         { block: 'achievments' },
+        { block: 'about' },
+        { block: 'services' },
         { block: 'footer' },
         {
             block : 'modal',
