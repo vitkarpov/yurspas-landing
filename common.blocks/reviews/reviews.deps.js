@@ -1,0 +1,6 @@
+({
+    shouldDeps: [
+        'caption',
+        'reviews-preview'
+    ]
+})
