@@ -1,5 +1,4 @@
 block('hero').content()(function() {
-    console.log(this.data);
     return {
         block: 'page',
         elem: 'wrapper',

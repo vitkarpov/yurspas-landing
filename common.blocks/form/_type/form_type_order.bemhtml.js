@@ -1,4 +1,7 @@
 block('form').mod('type', 'order')(
+    attrs()({
+        action: '?action=order', method: 'POST'
+    }),
     content()(function() {
         return [
             {

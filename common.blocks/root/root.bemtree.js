@@ -8,11 +8,11 @@ block('root').replace()(function() {
         head : [
             { elem : 'meta', attrs : { name : 'description', content : '' } },
             { elem : 'meta', attrs : { name : 'viewport', content : 'width=device-width, initial-scale=1' } },
-            { elem : 'css', url : 'index.min.css' }
+            { elem : 'css', url : 'index.min.css' },
+            { elem : 'css', url : 'https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&subset=cyrillic' }
         ],
         scripts: [
-            { elem : 'js', url : 'index.min.js' },
-            { block : 'font', mods: { type: 'google' }, family: 'Roboto Slab', weights: [400,700], sets: ['cyrillic'] }
+            { elem : 'js', url : 'index.min.js' }
         ],
         mods : { theme : 'islands' }
     };

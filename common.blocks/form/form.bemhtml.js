@@ -1,8 +1,6 @@
 block('form')(
     tag()('form'),
 
-    attrs()({ action: '/order', method: 'POST' }),
-
     js()(true),
 
     mode('states')(function() {

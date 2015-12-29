@@ -1,4 +1,7 @@
 block('form').mod('type', 'question')(
+    attrs()({
+        action: '?action=question', method: 'POST'
+    }),
     content()(function() {
         return [
             {
