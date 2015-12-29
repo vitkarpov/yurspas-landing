@@ -1,6 +1,6 @@
 block('form').mod('type', 'footer')(
     attrs()({
-        action: '?action=order', method: 'POST'
+        action: '/landing/forms.php?action=order', method: 'POST'
     }),
     content()(function() {
         return [
@@ -32,7 +32,7 @@ block('form').mod('type', 'footer')(
                                         content: {
                                             block : 'select',
                                             mods : { mode : 'check', theme : 'islands', size : 'xl', width: 'available' },
-                                            name : 'service',
+                                            name : 'service[]',
                                             text : 'Услуги',
                                             options : [
                                                 { val : 1, text : 'Гражданские' },

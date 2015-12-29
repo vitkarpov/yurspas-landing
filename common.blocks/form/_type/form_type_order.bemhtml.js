@@ -1,6 +1,6 @@
 block('form').mod('type', 'order')(
     attrs()({
-        action: '?action=order', method: 'POST'
+        action: '/landing/forms.php?action=order', method: 'POST'
     }),
     content()(function() {
         return [
@@ -34,9 +34,19 @@ block('form').mod('type', 'order')(
                     {
                         elem: 'item',
                         content: {
+                            block : 'input',
+                            mix: [{ block: 'form', elem: 'email' }],
+                            name: 'email',
+                            mods : { theme : 'islands', size : 'xl', width: 'available' },
+                            placeholder : 'Электронная почта'
+                        }
+                    },
+                    {
+                        elem: 'item',
+                        content: {
                             block : 'select',
                             mods : { mode : 'check', theme : 'islands', size : 'xl' },
-                            name : 'service',
+                            name : 'service[]',
                             text : 'Услуги',
                             options : [
                                 { val : 1, text : 'Гражданские' },

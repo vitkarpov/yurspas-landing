@@ -6,6 +6,8 @@ node_modules/
 .svn
 npm-debug.log
 *bundles/*/images/
+credentials.json
+forms.php
 
 # bem
 .bem/cache/

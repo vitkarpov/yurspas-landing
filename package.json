@@ -20,7 +20,9 @@
     "enb-bemxjst": "tadatuta/enb-bemxjst#a2c7072ba575652393ea7d9d04fbd3419e0a0af4",
     "enb-borschik": "^2.1.0",
     "enb-js": "^1.1.0",
-    "enb-stylus": "^2.1.0"
+    "enb-stylus": "^2.1.0",
+    "grunt": "^0.4.5",
+    "grunt-ftp-push": "^0.4.3"
   },
   "scripts": {
     "build": "YENV=production ./node_modules/.bin/enb make --no-cache",
