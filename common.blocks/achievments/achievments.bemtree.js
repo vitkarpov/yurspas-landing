@@ -17,7 +17,7 @@ block('achievments').content()(function() {
                     content: [
                         {
                             elem: 'pic',
-                            mods: { type: item.type },
+                            mods: {type: item.type},
                             content: [
                                 {
                                     block: 'caption',

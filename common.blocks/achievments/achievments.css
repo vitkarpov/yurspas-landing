@@ -74,6 +74,11 @@
     background-position: -435px 0;
 }
 
+.achievments__pic_type_pro:before
+{
+    background-position: -570px 0;
+}
+
 .achievments__pic:after
 {
     content: '';
@@ -95,7 +100,7 @@
     font-size: 1.3em;
     line-height: 1.2;
 
-    margin: 20px 20% 10px 20%;
+    margin: 20px 10% 10px 10%;
 }
 
 .achievments__text

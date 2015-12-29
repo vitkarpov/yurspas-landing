@@ -1,5 +1,6 @@
 .services
 {
+    position: relative;
     padding: 50px 0;
     margin-left: 50%;
 }
@@ -22,4 +23,33 @@
 .services__text
 {
     margin: 20px 0;
+}
+
+.services__pic
+{
+    position: absolute;
+    top: 115px;
+    right: 110%;
+    width: 90%;
+    bottom: 50px;
+
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.services__pic_type_civil
+{
+    background-position: 100% 0;
+    background-image: url('civil.jpg');
+}
+
+.services__pic_type_criminal
+{
+    background-image: url('criminal.jpg');
+}
+
+.services__pic_type_military
+{
+    background-image: url('military.jpg');
 }
