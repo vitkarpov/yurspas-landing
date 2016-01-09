@@ -1,3 +1,7 @@
+block('achievments')(
+    js()(true)
+)
+
 block('achievments').replace()(function() {
     return {
         block: 'page',

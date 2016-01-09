@@ -1,4 +1,4 @@
-block('modal').content()(function() {
+block('modal').mod('order', true).content()(function() {
     return {
         block: 'form',
         mods: { type: 'order' },

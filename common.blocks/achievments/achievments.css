@@ -33,6 +33,11 @@
     text-align: center;
 }
 
+.achievments__item_preview
+{
+    cursor: pointer;
+}
+
 .achievments__pic
 {
     position: relative;

@@ -11,9 +11,13 @@ block('achievments').content()(function() {
         },
         {
             elem: 'content',
-            content: this.data.achievments.items.map(function(item) {
+            content: this.data.achievments.items.map(function(item, i) {
                 return {
                     elem: 'item',
+                    mods: {preview: !!item.preview},
+                    js: {
+                        id: this.generateId() + '-' + i
+                    },
                     content: [
                         {
                             elem: 'pic',
@@ -29,10 +33,24 @@ block('achievments').content()(function() {
                         {
                             elem: 'text',
                             content: item.text
-                        }
+                        },
+                        (function() {
+                            if (!item.preview) {
+                                return null;
+                            }
+                            return {
+                                block: 'modal',
+                                js: true,
+                                mods: { theme: 'islands', autoclosable: true },
+                                content: {
+                                    tag: 'img',
+                                    attrs: { src: item.preview, width: '100%' }
+                                }
+                            };
+                        }())
                     ]
                 };
-            })
+            }.bind(this))
         }
     ];
 })
