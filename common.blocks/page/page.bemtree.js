@@ -9,16 +9,6 @@ block('page').content()(function() {
         { block: 'portfolio' },
         { block: 'reviews' },
         { block: 'contacts' },
-        { block: 'footer' },
-        {
-            block : 'modal',
-            js: true,
-            mods : { theme : 'islands', autoclosable: true, order: true },
-            content : {
-                block: 'form',
-                mods: { type: 'order' },
-                caption: this.data['application-caption']
-            }
-        }
+        { block: 'footer' }
     ];
 })

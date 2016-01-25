@@ -96,3 +96,25 @@
 {
     color: white;
 }
+
+.portfolio-item__article
+{
+    font-family: 'Roboto';
+}
+
+.portfolio-item__article-caption
+{
+    font-size: 36px;
+    margin: 10px 0 20px 0;
+}
+
+.portfolio-item__article-content
+{
+    font-size: 15px;
+}
+
+.portfolio-item__article-date
+{
+    font-size: 18px;
+    color: grey;
+}

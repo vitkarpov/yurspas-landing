@@ -85,6 +85,9 @@
 
     font-weight: bold;
     font-size: 1.35em;
+
+    color: white;
+    text-decoration: none;
 }
 
 .header__hours

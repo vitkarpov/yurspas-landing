@@ -16,13 +16,11 @@
 
 .contacts__map
 {
-    margin-top: 50px;
     height: 450px;
 }
 
 .contacts__content
 {
-    margin-left: 50%;
     padding: 50px 0;
 }
 
@@ -45,30 +43,10 @@
     padding-left: 50px;
 }
 
-.contacts__subcaption
-{
-    font-size: 1.2em;
-    font-weight: bold;
-
-    margin-bottom: 8px;
-}
-
-.contacts__address
-{
-    color: gray;
-    margin: 8px 0;
-}
-
-.contacts__icons
-{
-    margin-top: 20px;
-}
-
 .contacts__icon
 {
     position: relative;
 
-    margin: 8px 0;
     padding-left: 2em;
 }
 
@@ -100,4 +78,49 @@
 .contacts__icon_type_skype:before
 {
     content: '\e802';
+}
+
+.contacts__wrapper-contacts
+{
+    margin-left: 50%;
+    color: grey;
+}
+
+.contacts__icon:before
+{
+    color: #008dde;
+}
+
+.contacts__wrapper-contacts:after
+{
+    content: '';
+    clear: both;
+    display: table;
+}
+
+.contacts__left
+{
+    float: left;
+    margin-left: -100%;
+}
+
+.contacts__cell-phone
+{
+    font-size: 32px;
+    font-weight: bold;
+
+    margin-top: 8px;
+}
+
+.contacts__cell-prefix
+{
+    display: inline-block;
+    margin-right: 16px;
+    color: #008dde;
+}
+
+.contacts__cell-phone a
+{
+    text-decoration: none;
+    color: black;
 }

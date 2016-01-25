@@ -34,11 +34,6 @@ block('about').content()(function() {
                         elem: 'item',
                         mods: { pic: 'lawer' },
                         content: 'Адвокат Ростовской областной коллегии адвокатов с&nbsp;2001&nbsp;года, а&nbsp;с&nbsp;2008&nbsp;&mdash; заведующий филиалом &laquo;Ростовской городской юридической конторы &#8470;&nbsp;1&raquo;'
-                    },
-                    {
-                        block: 'button',
-                        mods: { theme: 'islands', size: 'l', order: true },
-                        text: 'Заказать звонок'
                     }
                 ]
             }

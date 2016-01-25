@@ -1,11 +1,18 @@
 .modal__content
 {
-    width: 80%;
-    max-width: 1200px;
-    padding: 20px 40px;
+    position: relative;
+    box-sizing: border-box;
+    width: 1000px;
+    padding: 40px 85px;
 }
 
-.modal_order .modal__content
+.modal__close
 {
-    width: 350px;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 4px;
+    top: 6px;
+    background: url('close.svg') center center no-repeat;
+    cursor: pointer;
 }

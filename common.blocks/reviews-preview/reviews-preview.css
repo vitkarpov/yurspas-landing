@@ -40,3 +40,9 @@
     max-width: 180px;
     height: auto;
 }
+
+.reviews-preview__image img
+{
+    /* I'm sure that an origin image is always bigger than container */
+    width: 100%;
+}

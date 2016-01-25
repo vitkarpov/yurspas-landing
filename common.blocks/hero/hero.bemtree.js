@@ -17,11 +17,6 @@ block('hero').content()(function() {
                         content: this.data.hero.subcaption
                     },
                     {
-                        block: 'button',
-                        mods: { theme: 'islands', size: 'l', question: true },
-                        text: this.data.question
-                    },
-                    {
                         block: 'advantages'
                     }
                 ]

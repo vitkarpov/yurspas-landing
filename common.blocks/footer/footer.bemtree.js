@@ -5,15 +5,6 @@ block('footer').content()(function() {
         content: [
             {
                 block: 'footer',
-                elem: 'form',
-                content: {
-                    block: 'form',
-                    mods: { type: 'footer' },
-                    caption: this.data['application-caption']
-                }
-            },
-            {
-                block: 'footer',
                 elem: 'finish',
                 content: [
                     {

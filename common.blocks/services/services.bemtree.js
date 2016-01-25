@@ -8,10 +8,10 @@ block('services').content()(function() {
         {
             block : 'radio-group',
             mods : { theme : 'islands', size : 'l', type : 'button' },
-            val: 'civil',
+            val: 'criminal',
             options : [
-                { val : 'civil', text : 'Гражданские' },
                 { val : 'criminal', text : 'Уголовные' },
+                { val : 'civil', text : 'Гражданские' },
                 { val : 'military', text : 'Военные' }
             ]
         },
@@ -67,11 +67,6 @@ block('services').content()(function() {
                     'пенсионного обеспечения'
                 ]
             }
-        },
-        {
-            block: 'button',
-            mods: { theme: 'islands', size: 'l', order: true },
-            text: 'Заказать звонок'
         }
     ];
 })

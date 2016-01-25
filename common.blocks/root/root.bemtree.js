@@ -9,7 +9,8 @@ block('root').replace()(function() {
             { elem : 'meta', attrs : { name : 'description', content : this.data.description } },
             { elem : 'meta', attrs : { name : 'viewport', content : 'width=device-width, initial-scale=1' } },
             { elem : 'css', url : 'index.min.css' },
-            { elem : 'css', url : 'https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&subset=cyrillic' }
+            { elem : 'css', url : 'https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&subset=cyrillic' },
+            { elem : 'css', url : 'https://fonts.googleapis.com/css?family=Roboto:300&subset=cyrillic' }
         ],
         scripts: [
             { elem : 'js', url : 'index.min.js' }

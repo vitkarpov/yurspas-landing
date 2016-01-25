@@ -22,17 +22,14 @@ block('header').content()(function() {
                 elem: 'right',
                 content: [
                     {
+                        tag: 'a',
+                        attrs: {href: 'tel:89094098026'},
                         elem: 'phone',
                         content: this.data.phone
                     },
                     {
                         elem: 'hours',
                         content: this.data.hours
-                    },
-                    {
-                        block: 'button',
-                        mods: { theme: 'islands', size: 'xl', view: 'action', order: true },
-                        text: this.data.call
                     }
                 ]
             }
