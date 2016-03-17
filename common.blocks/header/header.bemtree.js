@@ -26,10 +26,6 @@ block('header').content()(function() {
                         attrs: {href: 'tel:89094098026'},
                         elem: 'phone',
                         content: this.data.phone
-                    },
-                    {
-                        elem: 'hours',
-                        content: this.data.hours
                     }
                 ]
             }
