@@ -17,10 +17,6 @@ module.exports = function (grunt) {
                             "*.min.js",
                             "images/**"
                         ]
-                    },
-                    {
-                        expand: true,
-                        src: "forms.php"
                     }
                 ]
             }
