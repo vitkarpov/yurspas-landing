@@ -59,7 +59,7 @@
 
 .portfolio-item__text
 {
-    max-height: 65%;
+    max-height: 70%;
 
     overflow: hidden;
     text-overflow: ellipsis;
